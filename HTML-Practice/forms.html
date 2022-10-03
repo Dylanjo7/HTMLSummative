@@ -183,19 +183,39 @@ I have commented this input out because I,will not be needing a password input f
 <option value="december">December</option>
 </select>
 
-    
+    <!--
+      This is an textarea input. This allows a user to enter multiple lines information for a form.
+
+      name and id are required attributes
+      Highly recommended attributes are rows and cols. rows define the number of lines a user can type 
+      before ascoll line apears. cols define the number of characters across a usr 
+       can type becfre their input goes tp the next line.
+    -->
         
         <br />
         <br />
-        <label for="male">Male</label>
-        <input type="checkbox" />
-        <br />
-        <label for="female">Female</label>
-        <input type="checkbox" />
-        <br />
-        <label for="other">Other</label>
-        <input type="checkbox" />
+        <!-- a field set is an area in your form where
+        you put inpus that are more related to eachother then they are 
+      related to the other inputs in the form (u.e, a list of the travel 
+      items is more realted toeachother than the conuntru the person is recommending.)-->
+       
+          <fieldset>
+           <legend>Gender:</legend>
+           <!-- a legend describes how the inputs inside the feldset are all related.
+          
+          This is a checkbox input nopte this is an input where the input tipicly comes before the label.-->
+           <label for="male">Male</label>
+           <input type="checkbox" />
+           <br />
+           <label for="female">Female</label>
+           <input type="checkbox" />
+           <br />
+           <label for="other">Other</label>
+           <input type="checkbox" />
+          </fieldset>
         
+       <label for ="telephone">Please enter your telephone number:</label>
+       <input type="tel" name="userTel" id="telephone" />        
 <br />
 <br />
         <label for="story">Your Bio</label>
@@ -204,7 +224,7 @@ I have commented this input out because I,will not be needing a password input f
     
         <br />
         
-        <input type="submit" />
+        <input type="submit" value="Submit">
     </form>
 </body>
 </html>
