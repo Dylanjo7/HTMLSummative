@@ -1,93 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
     <title>Nintendo</title>
-    
-    <style>
-        ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          background-color: #333333;
-        }
-        
-        li {
-          float: left;
-        }
-        
-        li a {
-          display: block;
-          color: white;
-          text-align: center;
-          padding: 16px;
-          text-decoration: none;
-        }
-        
-        li a:hover {
-          background-color: #111111;
-        }
-
-
-        .flex-container {
-  display: -webkit-flex;
-  display: flex;  
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  font-weight: bold;
-  text-align: center;
-}
-
-.flex-container > * {
-  padding: 10px;
-  flex: 1 100%;
-}
-
-.main {
-  text-align: left;
-  background: rgb(253, 253, 253);
-}
-
-.header {background: rgb(255, 255, 255);}
-.footer {background: rgb(255, 255, 255);}
-.aside1 {background: rgb(255, 255, 255);}
-.aside2 {background: rgb(255, 255, 255);}
-
-@media all and (min-width: 768px) {
-  .aside { flex: 1 auto; }
-  .main    { flex: 3 0px; }
-  .aside1 { order: 1; } 
-  .main    { order: 2; }
-  .aside2 { order: 3; }
-  .footer  { order: 4; }
-}
-        </style>
-        
-</head>
-<body>
-    <h2>Top 5 Games</h2>
-    <p>My Top 5 Games On Each Console That I Have Used:</p>
-    
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="nintendo.html">Nintendo</a></li>
-      <li><a href="playstation.html">PlayStation</a></li>
-      <li><a href="xbox.html">Xbox</a></li>
-      <li><a href="computer.html">PC</a></li>
-    </ul>
-   
-
-
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="nintendo.html">Nintendo</a></li>
+        <li><a href="playstation.html">PlayStation</a></li>
+        <li><a href="xbox.html">Xbox</a></li>
+        <li><a href="computer.html">PC</a></li>
+      </ul>
+    </nav>
     <div class="flex-container">
-      <aside class="aside aside1">Top 2
-      
-        <br />
-        <center><h1>Wii Sports</h1></center>
-        <center><a href="https://en.wikipedia.org/wiki/Wii_Sports"><img src="https://m.media-amazon.com/images/I/81iNiQ0Tb8L._AC_SL1500_.jpg" alt="Our House on Amazon" style="width:150px;height:175px;"></a></center>
-        <a href="https://www.amazon.ca/Nintendo-Selects-Wii-Sports-Standard/dp/B004WLRR4K">Purchase Here</a>
+      <aside class="aside aside1">
+        <p style="color: rgb(255, 255, 255)">Top 2</p>
+
+        <center><h1 style="color: rgb(255, 255, 255)">Wii Sports</h1></center>
+        <center>
+          <a href="https://en.wikipedia.org/wiki/Wii_Sports"
+            ><img
+              src="https://m.media-amazon.com/images/I/81iNiQ0Tb8L._AC_SL1500_.jpg"
+              alt="Our House on Amazon"
+              style="width: 150px; height: 175px"
+          /></a>
+        </center>
+        <a
+          href="https://www.amazon.ca/Nintendo-Selects-Wii-Sports-Standard/dp/B004WLRR4K"
+          >Purchase Here</a
+        >
         <br />
         <br />
         <br />
@@ -95,35 +41,75 @@
         <br />
         <br />
 
+        <p style="color: rgb(255, 255, 255)">Top 3</p>
 
-
-        Top 3
-      
-        <br />
-        <center><h1>Super Mario 64</h1></center>
-        <center><a href="https://en.wikipedia.org/wiki/Super_Mario_64"><img src="https://upload.wikimedia.org/wikipedia/en/6/6a/Super_Mario_64_box_cover.jpg" alt="Super Mario 64 on Amazon" style="width:150px;height:175px;"></a></center>
-        <a href="https://www.amazon.com/Super-Mario-64-nintendo/dp/B00000F1GM/ref=sr_1_4?crid=2K6KK7V47Z6RZ&keywords=mario+64&qid=1664383296&qu=eyJxc2MiOiI1LjEzIiwicXNhIjoiNC4wMyIsInFzcCI6IjMuNTIifQ%3D%3D&sprefix=mario+64%2Caps%2C95&sr=8-4">Purchase Here</a>
-
-
+        <center>
+          <h1 style="color: rgb(255, 255, 255)">Super Mario 64</h1>
+        </center>
+        <center>
+          <a href="https://en.wikipedia.org/wiki/Super_Mario_64"
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/en/6/6a/Super_Mario_64_box_cover.jpg"
+              alt="Super Mario 64 on Amazon"
+              style="width: 150px; height: 175px"
+          /></a>
+        </center>
+        <a
+          href="https://www.amazon.com/Super-Mario-64-nintendo/dp/B00000F1GM/ref=sr_1_4?crid=2K6KK7V47Z6RZ&keywords=mario+64&qid=1664383296&qu=eyJxc2MiOiI1LjEzIiwicXNhIjoiNC4wMyIsInFzcCI6IjMuNTIifQ%3D%3D&sprefix=mario+64%2Caps%2C95&sr=8-4"
+          >Purchase Here</a
+        >
       </aside>
-      <article class="main">
-        <center><h1>Nintendo Top 5 Games</h1></center>
-        <center><a href="https://www.nintendo.com/"><img src="https://images.ctfassets.net/pkeegl0voupm/03GIrqsZwbmrkXsBpVpOX/e5e25bcc42f2ac8763e12b792e55e68a/bnr_hello.png?w=344&h=194" alt="Nintendo Website" style="width:300px;height:200px;"></a></center>
+      <section class="main">
+        <center>
+          <h1 style="color: rgb(255, 255, 255)">Nintendo Top 5 Games</h1>
+        </center>
+        <center>
+          <a href="https://www.nintendo.com/"
+            ><img
+              src="https://images.ctfassets.net/pkeegl0voupm/03GIrqsZwbmrkXsBpVpOX/e5e25bcc42f2ac8763e12b792e55e68a/bnr_hello.png?w=344&h=194"
+              alt="Nintendo Website"
+              style="width: 300px; height: 200px"
+          /></a>
+        </center>
         <br />
         <br />
-        
-        <center>Top 1</center>
-        <center><h1>Mario Party 8</h1></center>
-        <center><a href="https://en.wikipedia.org/wiki/Mario_Party_8"><img src="https://m.media-amazon.com/images/I/51QgCA4XxTL._AC_.jpg" alt="Our House on Amazon" style="width:150px;height:175px;"></a></center>
-        <center><a href="https://www.amazon.ca/Nintendo-of-Canada-45496900045-Mario/dp/B000LSJKAM/ref=asc_df_B000LSJKAM/?tag=googleshopc0c-20&linkCode=df0&hvadid=292938161176&hvpos=&hvnetw=g&hvrand=12152314710428067472&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9001212&hvtargid=pla-493291558685&psc=1">Purchase Here</a></center>
-      
-      </article>
-      <aside class="aside aside2">Top 4
-      
-        <br />
-        <center><h1>Our House</h1></center>
-        <center><a href="https://www.amazon.com/Our-House-Party-Nintendo-Wii/dp/B001FEO71I"><img src="https://m.media-amazon.com/images/I/81z+dnie+pL._AC_SY741_.jpg" alt="Our House on Amazon" style="width:150px;height:175px;"></a></center>
-        <a href="https://www.amazon.com/Our-House-Party-Nintendo-Wii/dp/B001FEO71I">Purchase Here</a>
+
+        <center><p style="color: rgb(255, 255, 255)">Top 1</p></center>
+        <center>
+          <h1 style="color: rgb(255, 255, 255)">Mario Party 8</h1>
+        </center>
+        <center>
+          <a href="https://en.wikipedia.org/wiki/Mario_Party_8"
+            ><img
+              src="https://m.media-amazon.com/images/I/51QgCA4XxTL._AC_.jpg"
+              alt="Our House on Amazon"
+              style="width: 150px; height: 175px"
+          /></a>
+        </center>
+        <center>
+          <a
+            href="https://www.amazon.ca/Nintendo-of-Canada-45496900045-Mario/dp/B000LSJKAM/ref=asc_df_B000LSJKAM/?tag=googleshopc0c-20&linkCode=df0&hvadid=292938161176&hvpos=&hvnetw=g&hvrand=12152314710428067472&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9001212&hvtargid=pla-493291558685&psc=1"
+            >Purchase Here</a
+          >
+        </center>
+      </section>
+      <aside class="aside aside2">
+        <p style="color: rgb(255, 255, 255)">Top 4</p>
+
+        <center><h1 style="color: rgb(255, 255, 255)">Our House</h1></center>
+        <center>
+          <a
+            href="https://www.amazon.com/Our-House-Party-Nintendo-Wii/dp/B001FEO71I"
+            ><img
+              src="https://m.media-amazon.com/images/I/81z+dnie+pL._AC_SY741_.jpg"
+              alt="Our House on Amazon"
+              style="width: 150px; height: 175px"
+          /></a>
+        </center>
+        <a
+          href="https://www.amazon.com/Our-House-Party-Nintendo-Wii/dp/B001FEO71I"
+          >Purchase Here</a
+        >
         <br />
         <br />
         <br />
@@ -131,25 +117,27 @@
         <br />
         <br />
 
+        <p style="color: rgb(255, 255, 255)">Top 5</p>
 
-        Top 5
-      
-        <br />
-        
-        <center><h1>Mario Odyssey</h1></center>
-        <center><a href="https://en.wikipedia.org/wiki/Super_Mario_Odyssey"><img src="https://m.media-amazon.com/images/I/91EzThTHhaL._AC_SY500_.jpg" alt="Our House on Amazon" style="width:150px;height:175px;"></a></center>
-        <a href="https://www.amazon.ca/Nintendo-HACPAAACA-Super-Mario-Odyssey/dp/B072V8MMX7/ref=asc_df_B072V8MMX7/?tag=googleshopc0c-20&linkCode=df0&hvadid=292957361268&hvpos=&hvnetw=g&hvrand=3173237734792444822&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9001212&hvtargid=pla-464698415404&th=1">Purchase Here</a>
-
-
-
+        <center>
+          <h1 style="color: rgb(255, 255, 255)">Mario Odyssey</h1>
+        </center>
+        <center>
+          <a href="https://en.wikipedia.org/wiki/Super_Mario_Odyssey"
+            ><img
+              src="https://m.media-amazon.com/images/I/91EzThTHhaL._AC_SY500_.jpg"
+              alt="Our House on Amazon"
+              style="width: 150px; height: 175px"
+          /></a>
+        </center>
+        <a
+          href="https://www.amazon.ca/Nintendo-HACPAAACA-Super-Mario-Odyssey/dp/B072V8MMX7/ref=asc_df_B072V8MMX7/?tag=googleshopc0c-20&linkCode=df0&hvadid=292957361268&hvpos=&hvnetw=g&hvrand=3173237734792444822&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9001212&hvtargid=pla-464698415404&th=1"
+          >Purchase Here</a
+        >
       </aside>
-      <footer class="footer">Footer
-
-
-
-
-
+      <footer class="footer">
+        <a href="sign-in.html">Sign In</a>
       </footer>
     </div>
-</body>
+  </body>
 </html>

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--The title of webpage-->
     <title>My First Web Page</title>
     <style>
-      
       ul {
         list-style-type: none;
         margin: 0;
@@ -15,11 +14,11 @@
         overflow: hidden;
         background-color: #333333;
       }
-      
+
       li {
         float: left;
       }
-      
+
       li a {
         display: block;
         color: white;
@@ -27,99 +26,116 @@
         padding: 16px;
         text-decoration: none;
       }
-      
+
       li a:hover {
         background-color: #111111;
       }
-      </style>
-      </head>
-      <body>
-      
-      <h2>Navigation Menu</h2>
-      
-      
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="iframes-tables-and-lists.html">IFrames, Tables and Lists</a></li>
-        <li><a href="links-and-images.html">Links and Images</a></li>
-        <li><a href="headings-and-paragraphs.html">Headings and Paragraphs</a></li>
-        <li><a href="forms.html">Forms</a></li>
-      </ul>
-  <style>
-* {
-  box-sizing: border-box;
-}
+    </style>
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+    <h2>Navigation Menu</h2>
 
-/* Style the header */
-header {
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="iframes-tables-and-lists.html">IFrames, Tables and Lists</a>
+      </li>
+      <li><a href="links-and-images.html">Links and Images</a></li>
+      <li>
+        <a href="headings-and-paragraphs.html">Headings and Paragraphs</a>
+      </li>
+      <li><a href="forms.html">Forms</a></li>
+    </ul>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-/* Container for flexboxes */
-section {
-  display: -webkit-flex;
-  display: flex;
-}
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
 
-/* Style the navigation menu */
-nav {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  background: #ccc;
-  padding: 20px;
-}
+      /* Style the header */
+      header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
 
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
+      /* Container for flexboxes */
+      section {
+        display: -webkit-flex;
+        display: flex;
+      }
 
-/* Style the content */
-article {
-  -webkit-flex: 3;
-  -ms-flex: 3;
-  flex: 3;
-  background-color: #f1f1f1;
-  padding: 10px;
-}
+      /* Style the navigation menu */
+      nav {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        background: #ccc;
+        padding: 20px;
+      }
 
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
+      /* Style the list inside the menu */
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
 
-/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  section {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-}
-</style>
-</head>
-<body>
-  
-<div class="flex-container">
-  <header class="header">Header</header>
-  <aside class="aside aside1">Aside 1</aside>
-  <article class="main">
-    
-  <a>HELLO</a>
-  <!-- 
-    Each element that we create for a website NEEDS tog o in the body of the document.
+      /* Style the content */
+      article {
+        -webkit-flex: 3;
+        -ms-flex: 3;
+        flex: 3;
+        background-color: #f1f1f1;
+        padding: 10px;
+      }
+
+      /* Style the footer */
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+      @media (max-width: 600px) {
+        section {
+          -webkit-flex-direction: column;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="https://www.pembinatrails.ca/earlycollege">PTEC HomePage</a>
+      <br />
+      <a href="headings-and-paragraphs.html">Headings and Paragraphs</a>
+      <br />
+      <a href="links-and-images.html">Links and Images</a>
+      <br />
+      <a href="iframes-tables-and-lists.html">IFrames, Tables, and Lists</a>
+      <br />
+      <br />
+      <img
+        src="https://c.tenor.com/1y8zDc-ll-EAAAAd/3d-saul-saul-goodman.gif"
+        alt="W3Schools.com"
+        width="104"
+        height="142" />
+      <title> </title>
+    </header>
+    <div class="flex-container">
+      <header class="header">Header</header>
+      <aside class="aside aside1">Aside 1</aside>
+      <article class="main">
+        <main></main>
+        <a>HELLO</a>
+        <!-- 
+      Each element that we create for a website NEEDS tog o in the body of the document.
     
     Most elements start with an opening tag and end with a closing tag. 
     In this example, <p> is the opening tag and </p> is the closing tag. 
@@ -128,35 +144,38 @@ footer {
     
     This is an example of a paragraph tag.
     -->
-  
-  <h1>Hello World!</h1>
-  <p>My name is Dylan Sanchez</p>
-  <br>
-  <!--<a href="https://www.pembinatrails.ca/earlycollege">PTEC HomePage</a>-->
-  <a href="https://www.pembinatrails.ca/earlycollege">PTEC HomePage</a>
-  <br />
-  <a href="headings-and-paragraphs.html">Headings and Paragraphs</a>
-  <br />
-  <a href="links-and-images.html">Links and Images</a>
-  <br />
-  <a href="iframes-tables-and-lists.html">IFrames, Tables, and Lists</a>
-  <br />
-  <br />
-  <img src="https://c.tenor.com/1y8zDc-ll-EAAAAd/3d-saul-saul-goodman.gif" alt="W3Schools.com" width="104" height="142">
-  <!-- This is an example of an image tag.
+
+        <h1>Hello World!</h1>
+        <p>My name is Dylan Sanchez</p>
+        <br />
+        <!--<a href="https://www.pembinatrails.ca/earlycollege">PTEC HomePage</a>-->
+        <a href="https://www.pembinatrails.ca/earlycollege">PTEC HomePage</a>
+        <br />
+        <a href="headings-and-paragraphs.html">Headings and Paragraphs</a>
+        <br />
+        <a href="links-and-images.html">Links and Images</a>
+        <br />
+        <a href="iframes-tables-and-lists.html">IFrames, Tables, and Lists</a>
+        <br />
+        <br />
+        <img
+          src="https://c.tenor.com/1y8zDc-ll-EAAAAd/3d-saul-saul-goodman.gif"
+          alt="W3Schools.com"
+          width="104"
+          height="142" />
+        <!-- This is an example of an image tag.
   the src attribute is the location of the image we want to display.
 the src attribute can be an internet location (i.e., https://www.google.com/...)
 but the best practice is to have your own images folder that stores all the images you  uses on your website.
 
 NOTE: img is a self-closing tag.-->
 
-  <br />
+        <br />
 
-  <BODY BGCOLOR=" #FFA500 "></BODY>
-  </article>
-  <aside class="aside aside2">Aside 2</aside>
-  <footer class="footer">Footer</footer>
-</div>
-
-</body>
+        <body bgcolor=" #FFA500 "></body>
+      </article>
+      <aside class="aside aside2">Aside 2</aside>
+      <footer class="footer"><p>&#169; 2022 Dylan</p></footer>
+    </div>
+  </body>
 </html>

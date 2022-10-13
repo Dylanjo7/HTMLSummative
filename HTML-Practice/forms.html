@@ -1,118 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
     <style>
-        ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          background-color: #333333;
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333333;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #111111;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Style the header */
+      header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+
+      /* Container for flexboxes */
+      section {
+        display: -webkit-flex;
+        display: flex;
+      }
+
+      /* Style the navigation menu */
+      nav {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        background: #ccc;
+        padding: 20px;
+      }
+
+      /* Style the list inside the menu */
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      /* Style the content */
+      article {
+        -webkit-flex: 3;
+        -ms-flex: 3;
+        flex: 3;
+        background-color: #f1f1f1;
+        padding: 10px;
+      }
+
+      /* Style the footer */
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+      @media (max-width: 600px) {
+        section {
+          -webkit-flex-direction: column;
+          flex-direction: column;
         }
-        
-        li {
-          float: left;
-        }
-        
-        li a {
-          display: block;
-          color: white;
-          text-align: center;
-          padding: 16px;
-          text-decoration: none;
-        }
-        
-        li a:hover {
-          background-color: #111111;
-        }
-        </style>
-        </head>
-        <body>
-        
-        <h2>Navigation Menu</h2>
-       
-        
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="iframes-tables-and-lists.html">IFrames, Tables and Lists</a></li>
-          <li><a href="links-and-images.html">Links and Images</a></li>
-          <li><a href="headings-and-paragraphs.html">Headings and Paragraphs</a></li>
-          <li><a href="forms.html">Forms</a></li>
-          <li><label for="search">Search</label></li>
-          <li><input type="search" /></li>
-        </ul>
-        <style>
-            * {
-              box-sizing: border-box;
-            }
-            
-            body {
-              font-family: Arial, Helvetica, sans-serif;
-            }
-            
-            /* Style the header */
-            header {
-              background-color: #666;
-              padding: 30px;
-              text-align: center;
-              font-size: 35px;
-              color: white;
-            }
-            
-            /* Container for flexboxes */
-            section {
-              display: -webkit-flex;
-              display: flex;
-            }
-            
-            /* Style the navigation menu */
-            nav {
-              -webkit-flex: 1;
-              -ms-flex: 1;
-              flex: 1;
-              background: #ccc;
-              padding: 20px;
-            }
-            
-            /* Style the list inside the menu */
-            nav ul {
-              list-style-type: none;
-              padding: 0;
-            }
-            
-            /* Style the content */
-            article {
-              -webkit-flex: 3;
-              -ms-flex: 3;
-              flex: 3;
-              background-color: #f1f1f1;
-              padding: 10px;
-            }
-            
-            /* Style the footer */
-            footer {
-              background-color: #777;
-              padding: 10px;
-              text-align: center;
-              color: white;
-            }
-            
-            /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-            @media (max-width: 600px) {
-              section {
-                -webkit-flex-direction: column;
-                flex-direction: column;
-              }
-            }
-            </style>
-</head>
-<body>
-    <h1>HTML Forms</h1>
-    <!--
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Navigation Menu</h2>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="iframes-tables-and-lists.html">IFrames, Tables and Lists</a>
+      </li>
+      <li><a href="links-and-images.html">Links and Images</a></li>
+      <li>
+        <a href="headings-and-paragraphs.html">Headings and Paragraphs</a>
+      </li>
+      <li><a href="forms.html">Forms</a></li>
+      <li><label for="search">Search</label></li>
+      <li><input type="search" /></li>
+    </ul>
+    <main>
+      <h1>HTML Forms</h1>
+      <!--
 
 The form tag is used to create a container where all the inputs for a form must be put inside.
 
@@ -126,8 +126,8 @@ o
 
 method has two typical values: get and post. Get is used for forms that do not ask for personal information (search bars, etc.). Post is used for forms that ask for personal information (login and signup pages, etc.).
 -->
-    <form name="game-suggestions" id="game" method="get">
-      <!--
+      <form name="game-suggestions" id="game" method="get">
+        <!--
 This is a text input. type="text" name, and id are all required attributes.
 The required attribute is only necessary when you want to make sure the user
  has to fill in the input before submitting the form.
@@ -144,46 +144,56 @@ When an input is required, it is important to include the word required
 in the label's text.-->
         <label for="username">Username</label>
         <input type="text" name="name" id="username" required />
-<br />
-<br />
-<!--This is a password input. type-"password", name, and id are all required attributes.
+        <br />
+        <br />
+        <!--This is a password input. type-"password", name, and id are all required attributes.
 
 As always, each input needs a label with the for attribute to link the label to an input.
 
 I have commented this input out because I,will not be needing a password input for this form.
 
 -->
-<label for="email">Email Address</label>
-<input type="email" name="email" id="email-address" minlength="6" maxlength="40"/> 
-<br />
-<br />
-<label for="password">Password</label>
-<input type="password" name="userpassword" id="password" minlength="10" required />
-<br />
-<br />
-<label for="age">Age</label>
-<br />
-<input type="number" />
-<br />
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          name="email"
+          id="email-address"
+          minlength="6"
+          maxlength="40" />
+        <br />
+        <br />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="userpassword"
+          id="password"
+          minlength="10"
+          required />
+        <br />
+        <br />
+        <label for="age">Age</label>
+        <br />
+        <input type="number" />
+        <br />
 
-<label for="month">Month Born:</label>
+        <label for="month">Month Born:</label>
 
-<select name="month" id="month">
-<option value="january">January</option>
-<option value="febuary">February</option>
-<option value="march">March</option>
-<option value="april">April</option>
-<option value="may">May</option>
-<option value="june">June</option>
-<option value="july">July</option>
-<option value="august">August</option>
-<option value="september">September</option>
-<option value="october">October</option></var>
-<option value="november">November</option>
-<option value="december">December</option>
-</select>
+        <select name="month" id="month">
+          <option value="january">January</option>
+          <option value="febuary">February</option>
+          <option value="march">March</option>
+          <option value="april">April</option>
+          <option value="may">May</option>
+          <option value="june">June</option>
+          <option value="july">July</option>
+          <option value="august">August</option>
+          <option value="september">September</option>
+          <option value="october">October</option>
+          <option value="november">November</option>
+          <option value="december">December</option>
+        </select>
 
-    <!--
+        <!--
       This is an textarea input. This allows a user to enter multiple lines information for a form.
 
       name and id are required attributes
@@ -191,40 +201,44 @@ I have commented this input out because I,will not be needing a password input f
       before ascoll line apears. cols define the number of characters across a usr 
        can type becfre their input goes tp the next line.
     -->
-        
+
         <br />
         <br />
         <!-- a field set is an area in your form where
         you put inpus that are more related to eachother then they are 
       related to the other inputs in the form (u.e, a list of the travel 
       items is more realted toeachother than the conuntru the person is recommending.)-->
-       
-          <fieldset>
-           <legend>Gender:</legend>
-           <!-- a legend describes how the inputs inside the feldset are all related.
+
+        <fieldset>
+          <legend>Gender:</legend>
+          <!-- a legend describes how the inputs inside the feldset are all related.
           
           This is a checkbox input nopte this is an input where the input tipicly comes before the label.-->
-           <label for="male">Male</label>
-           <input type="checkbox" />
-           <br />
-           <label for="female">Female</label>
-           <input type="checkbox" />
-           <br />
-           <label for="other">Other</label>
-           <input type="checkbox" />
-          </fieldset>
-        
-       <label for ="telephone">Please enter your telephone number:</label>
-       <input type="tel" name="userTel" id="telephone" />        
-<br />
-<br />
-        <label for="story">Your Bio</label>
-        
-<br /><textarea id="story" name="story" rows="5" cols="33"></textarea>
-    
+          <label for="male">Male</label>
+          <input type="checkbox" />
+          <br />
+          <label for="female">Female</label>
+          <input type="checkbox" />
+          <br />
+          <label for="other">Other</label>
+          <input type="checkbox" />
+        </fieldset>
+
+        <label for="telephone">Please enter your telephone number:</label>
+        <input type="tel" name="userTel" id="telephone" />
         <br />
-        
-        <input type="submit" value="Submit">
-    </form>
-</body>
+        <br />
+        <label for="story">Your Bio</label>
+
+        <br /><textarea id="story" name="story" rows="5" cols="33"></textarea>
+
+        <br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+    <footer>
+      <p>&#169; 2022 Dylan</p>
+    </footer>
+  </body>
 </html>

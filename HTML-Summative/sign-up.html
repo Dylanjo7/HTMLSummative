@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Sign In</title>
+  </head>
+  <body>
+    <h2>Top 5 Games</h2>
+    <p>My Top 5 Games On Each Console That I Have Used:</p>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="nintendo.html">Nintendo</a></li>
+      <li><a href="playstation.html">PlayStation</a></li>
+      <li><a href="xbox.html">Xbox</a></li>
+      <li><a href="computer.html">PC</a></li>
+    </ul>
+
+    <div class="flex-container">
+      <aside class="aside aside1"></aside>
+      <section class="main">
+        <form>
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            name="email"
+            id="email-address"
+            minlength="6"
+            maxlength="40" />
+          <br />
+          <br />
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="userpassword"
+            id="password"
+            minlength="10"
+            required />
+          <br />
+          <br />
+          <label for="age">Age</label>
+          <br />
+          <input type="number" />
+          <br />
+
+          <label for="month">Month Born:</label>
+
+          <select name="month" id="month">
+            <option value="january">January</option>
+            <option value="febuary">February</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="july">July</option>
+            <option value="august">August</option>
+            <option value="september">September</option>
+            <option value="october">October</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
+          </select>
+
+          <!--
+      This is an textarea input. This allows a user to enter multiple lines information for a form.
+
+      name and id are required attributes
+      Highly recommended attributes are rows and cols. rows define the number of lines a user can type 
+      before ascoll line apears. cols define the number of characters across a usr 
+       can type becfre their input goes tp the next line.
+    -->
+
+          <br />
+          <br />
+          <!-- a field set is an area in your form where
+        you put inpus that are more related to eachother then they are 
+      related to the other inputs in the form (u.e, a list of the travel 
+      items is more realted toeachother than the conuntru the person is recommending.)-->
+
+          <fieldset>
+            <legend>Gender:</legend>
+            <!-- a legend describes how the inputs inside the feldset are all related.
+          
+          This is a checkbox input nopte this is an input where the input tipicly comes before the label.-->
+            <label for="male">Male</label>
+            <input type="checkbox" />
+            <br />
+            <label for="female">Female</label>
+            <input type="checkbox" />
+            <br />
+            <label for="other">Other</label>
+            <input type="checkbox" />
+          </fieldset>
+
+          <label for="telephone">Please enter your telephone number:</label>
+          <input type="tel" name="userTel" id="telephone" />
+          <br />
+          <br />
+          <label for="story">Your Bio</label>
+
+          <br /><textarea id="story" name="story" rows="5" cols="33"></textarea>
+
+          <br />
+
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+      <aside class="aside aside2"></aside>
+      <footer class="footer">
+        <a href="sign-in.html">Sign In</a>
+      </footer>
+    </div>
+  </body>
+</html>
