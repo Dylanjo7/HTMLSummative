@@ -1,7 +1,10 @@
 h1 {
   color: #ffffff;
+  
 }
-
+h2 {
+  color: #ffffff;
+}
 p {
   color: #ffffff;
 }
@@ -11,7 +14,15 @@ label {
 legend {
   color: #ffffff;
 }
-
+td {
+  color: #ffffff;
+}
+tr {
+  color:#ffffff;
+}
+table {
+  color: #ffffff;
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -19,7 +30,9 @@ ul {
   overflow: hidden;
   background-color: #333333;
 }
-
+table, th, td {
+  border:1px solid #ffffff;
+}
 li {
   float: left;
 }
