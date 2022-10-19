@@ -1,12 +1,17 @@
 h1 {
   color: #ffffff;
-  
+  text-align: center;
 }
 h2 {
   color: #ffffff;
+  text-align: center;
 }
 p {
   color: #ffffff;
+  text-align: center;
+}
+a {
+  text-align: center;
 }
 label {
   color: #ffffff;
@@ -18,20 +23,29 @@ td {
   color: #ffffff;
 }
 tr {
-  color:#ffffff;
+  color: #ffffff;
 }
+th {
+  text-align: center;
+}
+
 table {
   color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
 }
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333333;
+  background-color: #1d1a1a;
 }
-table, th, td {
-  border:1px solid #ffffff;
+
+table,
+th,
+td {
+  border: 1px solid #ffffff;
 }
 li {
   float: left;
@@ -56,14 +70,15 @@ li a:hover {
   flex-flow: row wrap;
   font-weight: bold;
   text-align: center;
+  justify-content: center;
 }
 
 .flex-container > * {
   padding: 10px;
-  flex: 1 100%;
+  flex: 1;
 }
 
-.main {
+.column2 {
   text-align: left;
   background: rgb(20, 18, 18);
 }
@@ -74,30 +89,30 @@ li a:hover {
 .footer {
   background: rgb(29, 26, 26);
 }
-.aside1 {
+.column1 {
   background: rgb(20, 18, 18);
 }
-.aside2 {
+.column3 {
   background: rgb(20, 18, 18);
 }
 
 @media all and (min-width: 768px) {
-  .aside {
+  .column {
     flex: 1 auto;
   }
-  .main {
-    flex: 3 0px;
-  }
-  .aside1 {
+
+  .column1 {
     order: 1;
   }
-  .main {
+  .column2 {
+    flex: 3 0px;
     order: 2;
   }
-  .aside2 {
+  .column3 {
     order: 3;
   }
   .footer {
     order: 4;
+    text-align: center;
   }
 }
