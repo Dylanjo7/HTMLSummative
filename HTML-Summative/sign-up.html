@@ -5,20 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylesheet.css" />
-    <title>Sign In</title>
+    <title>Sign Up</title>
   </head>
   <body>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="nintendo.html">Nintendo</a></li>
-      <li><a href="playstation.html">PlayStation</a></li>
-      <li><a href="xbox.html">Xbox</a></li>
-      <li><a href="computer.html">PC</a></li>
-    </ul>
+    <!-- Top Navigation bar that takes you to diffrent parts of the web page-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="nintendo.html">Nintendo</a></li>
+        <li><a href="playstation.html">PlayStation</a></li>
+        <li><a href="xbox.html">Xbox</a></li>
+        <li><a href="computer.html">PC</a></li>
+      </ul>
+    </nav>
 
     <main class="flex-container">
       <section class="column column1">
-        <form>
+        <center>
+          <h1>
+            <u>Sign Up</u>
+          </h1>
+        </center>
+        <br />
+        <br />
+        <form name="sign-up" id="up" method="get">
+          <!--This is a text input. type="text" name, and id are all required attributes.
+        The required attribute is only necessary when you want to make sure the user
+        has to fill in the input before submitting the form.
+
+        The type attribute defines the type of input.
+        The name attribute defines the variable name that would be used for the 
+        input when the data gets passed to the server (requires back-end scripting,
+        which is beyond the scope of this course).
+        The id attribute allows us to reference the input from the label and from
+          other parts of our code.-->
           <label for="email">Email Address</label>
           <input
             type="email"
@@ -28,6 +48,12 @@
             maxlength="40" />
           <br />
           <br />
+          <!--This is a password input. type-"password", name, and id are all required attributes.
+
+          As always, each input needs a label with the for attribute to link the label to an input.
+
+          <label for="password">Password</label>
+          <!- This input is for paswwords or confidential information for the user to type.-->
           <label for="password">Password</label>
           <input
             type="password"
@@ -39,34 +65,16 @@
           <br />
           <label for="age">Age</label>
           <br />
+          <!--This input is for users to enter a number.-->
           <input type="number" />
           <br />
-
-          <label for="month">Month Born:</label>
-
-          <select name="month" id="month">
-            <option value="january">January</option>
-            <option value="febuary">February</option>
-            <option value="march">March</option>
-            <option value="april">April</option>
-            <option value="may">May</option>
-            <option value="june">June</option>
-            <option value="july">July</option>
-            <option value="august">August</option>
-            <option value="september">September</option>
-            <option value="october">October</option>
-            <option value="november">November</option>
-            <option value="december">December</option>
-          </select>
-
-          <!--
-      This is an textarea input. This allows a user to enter multiple lines information for a form.
-
-      name and id are required attributes
-      Highly recommended attributes are rows and cols. rows define the number of lines a user can type 
-      before ascoll line apears. cols define the number of characters across a usr 
-       can type becfre their input goes tp the next line.
-    -->
+          <br />
+          <label for="date">Date Born:</label>
+          <br />
+          <!--THIS IS MY RESEARCH AND INCLUDE AND INPUT TYPE, it is a date type.
+             When the user clicks on the year month day part it opens a calender for a 
+             user to unpit a asked date (EXAMPLE When is your birthday)-->
+          <input type="date" />
 
           <br />
           <br />
@@ -89,13 +97,20 @@
             <label for="other">Other</label>
             <input type="checkbox" />
           </fieldset>
-
+          <!--Tel input has a link that brings you too the phone app and automaticly enters a number.-->
           <label for="telephone">Please enter your telephone number:</label>
           <input type="tel" name="userTel" id="telephone" />
           <br />
           <br />
           <label for="story">Your Bio</label>
+          <!-- A textarea is an area for the user to type and the size can be changesd by the user.
+          This is an textarea input. This allows a user to enter multiple lines information for a form.
 
+          name and id are required attributes
+          Highly recommended attributes are rows and cols. rows define the number of lines a user can type 
+          before ascoll line apears. cols define the number of characters across a usr 
+          can type becfre their input goes tp the next line.
+           -->
           <br /><textarea id="story" name="story" rows="5" cols="33"></textarea>
 
           <br />
@@ -105,7 +120,10 @@
       </section>
     </main>
     <footer class="footer">
-      <a href="sign-in.html">Sign In</a>
+      <a href="sign-in.html">Sign In </a>
+      <br />
+      <br />
+      <small>&#169; <i>2022 Dylan</i></small>
     </footer>
   </body>
 </html>

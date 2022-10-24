@@ -28,6 +28,9 @@ tr {
 th {
   text-align: center;
 }
+small {
+  color: #ffffff;
+}
 
 table {
   color: #ffffff;
@@ -40,6 +43,9 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #1d1a1a;
+}
+body {
+  background-color: rgb(20, 18, 18);
 }
 
 table,
@@ -88,6 +94,7 @@ li a:hover {
 }
 .footer {
   background: rgb(29, 26, 26);
+  padding: 10px;
 }
 .column1 {
   background: rgb(20, 18, 18);

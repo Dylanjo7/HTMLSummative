@@ -8,28 +8,34 @@
     <title>Computer</title>
   </head>
   <body>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="nintendo.html">Nintendo</a></li>
-      <li><a href="playstation.html">PlayStation</a></li>
-      <li><a href="xbox.html">Xbox</a></li>
-      <li><a href="computer.html">PC</a></li>
-    </ul>
-
+    <!-- Top Navigation bar that takes you to diffrent parts of the web page-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="nintendo.html">Nintendo</a></li>
+        <li><a href="playstation.html">PlayStation</a></li>
+        <li><a href="xbox.html">Xbox</a></li>
+        <li><a href="computer.html">PC</a></li>
+      </ul>
+    </nav>
     <main class="flex-container">
+      <!--column 1 is the left side of the webpage-->
       <section class="column column1">
         <p>Top 2</p>
-
+        <!-- Everything that is typed here is for all of the images and the purchase here's,
+        the "a href" is for the link to wikipedia and to get there is by the user pressing the link.
+        The img is the image itself, the purchase here takes the user to where the game is purchased. \
+        (EXAMPLE "it would take you to the amazon page.")-->
         <center><h1>Minecraft Java</h1></center>
         <center>
-          <a href="https://en.wikipedia.org/wiki/Minecraft"
-            ><img
-              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYVFRgWFRcVGRgaGhwYGBoaGRoYGBgYGBocHBgYHBgcIS4lHB4rIRoaJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHxISHjQrJSsxNDQ0NzQ0NDQxNDQ0NDQ0NDQ0MTQ0NDQ0NDQ0NDQ0NDQ0MTQ0NDQ0NDQ0NDE0NDQ0NP/AABEIAQMAwgMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAFAAIDBAYBB//EAEMQAAIBAgMEBggEAwYGAwAAAAECEQADBBIhBTFBUQYTImFxkRQyUoGSobHRB0LB8GJygiNzk7LC4RYzU6LS8SQ0Q//EABoBAQADAQEBAAAAAAAAAAAAAAABAgMEBQb/xAApEQACAgIBAgUEAwEAAAAAAAAAAQIRAxIhBDETIkFRcQUzgaEjMrGR/9oADAMBAAIRAxEAPwDyv0l/bf42+9L0l/bf42+9R0quQSekv7b/ABt96XpL+2/xt96ZSoB/pL+2/wAbfel6S/tv8bfemUqAf6S/tv8AG33pekv7b/G33plKgH+kv7b/ABt96XpL+2/xt96ZSoB/pL+2/wAbfel6S/tv8bfemUqAf6S/tv8AG33pekv7b/G33plKgH+kv7b/ABt96XpL+2/xt96ZSoB/pL+2/wAbfel6S/tv8bfemUqAf6S/tv8AG33pekv7b/G33plKgH+kv7b/ABt96XpL+2/xt96ZSoB/pL+2/wAbfel6S/tv8bfemVygJPSX9t/jb70qjpUBylUr2+IqKgOzRm10XxLWRfCoLZXPLOoOSJkg7tKG7PwjXrqWl3u6p4ZjqfcJPur3MYBAmQImUDKFZQVIGgBU7+FVk6JSs8GsgsVVdSxCqOZYwB5mjG0ei+JsKGuKgBZUADqSWYwoA/e6t50c6EjDu73GtXiwGUFIyGSSwBmDMbuVO25YLYrBYc5SodsQwWdBbHYkHhJjzqNidTA7R6MYmwge4iBSyqIdWJZjCgAUtqdGcTh0Ny6qBQQpIcMZYwNBXoXSiyHxGCs69q91rb9VsidRu3mPfRDbtu0yiw5QPeDJazIXGfLv0GkTPCmzJ1R5dgui+Ju2heRFyMCwLOFMKSCYPgfdFd2d0WxN+2t1FTI8lczhToSNx7xXpN/Z4wuBuKIJt2HBYDLmKoZJ7yaf0dwTeg2VDQTZAB0hSy79NeNNmKPPf+B8b7Fv/EX7VU2Z0XxOItrdtqmRpjM4U6GDp7q1N/obi1VidoOQqlvWfWA0iM/IfOjnQGyfQbERJzHWd/WNypsyKRhh0Gxvs2/8QfaqWzejGJvoHtqmUlgJcKZQw2lCxtnEx/8AYv8A+K//AJV6b+HFstg1ObddfQieU67/AM00bYSTMl/wNjPYtf4g+1Vtm9FcTfUtbVCAzIZcA5lMNpHOvT9nbOuYe1cGY4hy7ui5sphgMtvM5MQQde/dQPohhetTGWLyMh9IYugbtJmg5Qy8ip1FNmTqjL/8C432Lf8AiD7VS2f0XxF8OUW3/Z3GtuC4Uhl9YRG7vradG8Jimv23xNlkVbbC0Qx7AXs5Lqj1mIbQtroDV7o+mTGY61AHbS8o5517R84+KmzGqMQOhGMmMtqf7wee7dVXA9FsTdNxVVJtubbhnCkMNeWo763O2eit97r3Uxz2lJBVJaEzQDEOBqRO6sN0lwN/AXigxDv1ihi6sy5tSCGGYkkRvPOlshotHoPjPZtcv+YOPuoBjcI9p3tuIdDlYAyJ36HiIIr151OLwGdGId7QZSDBDqAd43EOsV45cus5zOzMx3sxLMT3k61MWyGkjlcmlUipFWIG5DSqXSlQEhWobicqtMtMIoDRfhtglfEu7sg6q2xTM6pLt2VjMRuGb5UT6adI+px2HICXVsKXjMMpa4MslkZpIAB7jPOsHdT8wiR5U2/dVl9UgjlEVVrklPg9W6FY0Ym/icZda1bzLbtIucDKqiXjNBIJymeZI4VNgsVafaeJus9sLatW8OhLqAzXHzHKZg6kieE147auZSOPCDy7uVWGxAzBlXuO7VTvFRROx63cvo+1szXLYSxhSQc65c7vrBnU5T/2igH4i7SK4vCjD3VzorEMGRwrXWC79R6oG+s9sbAYa4QcQ+IsFiBYy2lZbgJhiGYgHUgaTvo/j+gdu2zm7dvtaDZLZs2OsuFgoNwuqgBVB0BBO6oJs0vTzGW1wWIVLqMSiqB1iOxzXADuMkwD50TW1ZfDHDNesibC2yy3EkB0KEwWgkQa87290NbD2brZ2uMlxURVtySjqrBngSrDMBppMa61YToTlVXuXbvVrZts6pZD31u3Z7ASPVUASSQRyoLJMf8Ah/hUS464sE20ZoLWu0VQsFADTroPfWp6GbQsWsBhusvWUOUiGdQcxuPAImRvG+sFtLo2ExGGsBybeKKFGZAl1VZgrZ7ZEBt8CTRPafRTC4dkttiL4d2y2wUsFXJYKdVuEgdriJoLLZ/DvCLlHp+8wP8Ak8p9vuoj+HTW0sPbN1BkxF4auiEgZArQTuMNu0rPY7ovhw1+1YxLtesKzur20VciEZ4KknNBESAOcVHj+j+Bw4sM2Kv5LyNcB6q2Tl4ES0TPChBp+ht9EvY9Gu21HpbskukMHLQQSddAN1S7BxVtdobQU3LYVjadSbiBT2e3BmDqayu0ejeBw923abFXwzlWM2reiXFJUjtc8ojdqaff6H2LVzEl8RcFnD5FuN1aG51lwjLCk5ckMuszLd1CbNdY2rG0rllsQhtNYW5bBdCisCFYBp3mCYnjVe5dS3tZHN2zlvYZkJDKBmRpGY5iAYA48KzljoIHV7trEqUdEuYc3FCh1zZHF3KDkIbQZZGokig23+j7YNLFxwxa6HV0IUBHQjRSDDKQZmgsMfi3YRrli6jIxKMjZXViMpzLIB/ibWvPSkVOzSZiOA7hTHGlWSKt8nqn4XY9WwzI90IbbkKrOijK3alQwn1i06msD0mwa2cVetoVZA5ZCpDDK/aAkGNJj3UPN8RCqZ5tB98c6dbtxUpBs4iRTgKdlpZakg5NKnRSoC0y1Gwq0RUTrUlSpdXQ+FD3NFby9k+BoY61DJQzIeYruaDBpI0b930pXF7RqCTS7K6a4ixaWyAjok5C6qzIDwVmBKgcIiunp1jMqoLjJlLNmVmDNnOY5iCCxniTWaVK4yGaiibNInTXEjEPiARmuAK6fkbKuVWyxAIgRppFRYXpjiraXES4wNxw7PmOeQIjNMx7+NZ/KaRBpQsPYrpXfuXsPfchrmHVVQnXNlJMtI1Mk6maJYnp/fcEG1h5JBzC1bzSCDIYLMyKx1KlCzWbS6d4m8jqVtpnEM6IqsQfWGZVB1461V6Q9LbuMtrbuLbVVYMuVFUiFYZQQohe0dO4VnaVKFhy70luNiLeIZUZ7aKiggFYRSqlgRBOvEUVbp7iWuG4VterlZcq5XgypcZYcjhI0rHV1XilCzVYjpriXz+ooe2bQVVCoiN6xVQIDExqI3CqG0OkF6/YSxcIKI2ZSdWBy5QoJ1VY/LuoL1h7qXWHuqaRBLSpttp306pAquxVIcKvRRAbXYpwFKJqQNgUqdlrtAEDu5j98aYUoPavsnqn3bwfdV63tAEdoEHu1H3FLIokvL2T4H6UOweDNycpAiN8wZ8KNYjDsq9ob1n3kajxFQ7IQqhZVVizbiwQkKPyzvM/WqyZMUDbuyrg/Lm/lIPy31VNsqYIIPIiK2ZuKpWc3a4hSyg8iQNKz23rg65hPqgL5Cf1qLLNA4CuuNa4HHOpHGtSQRAU4JINdin2xQgq5TypZTUuQEcePHiKZ1Z50BHSqbqxS6sUBDFdymperFMHEUB3q++l1ffU0UooCHq++l1ffUtd046fvlQDLdogjfvEedEqHo/aAPMUQZgupIFEBZaTHTXQVXuYv2R7zu8qqu5OpM1Ngv8ApSe18j9qVDppUsFlUU7vkacoVSCQSAdY3xxpq7OfgB8VSHC3Rvyn3iarsvcvpL2PVsXsKzc2UuJRl6zIXB9rM0BGHBgCIPDjpXmqYnKoRktuomA66id8MNRXqP4SYs3cNfw5VWYTmY8Ay9WFdeMBQZ4iss+FsWXyXhZVVLIziDDo0QAATlIEye+qtiKszT4pCmVFuW2YgEC4WRlO8ZTrwoXicNx0BPDeK2mPwYuC1bS2tty7OQwyuFTMpZwNQeQ4zNZ/btsJcZBHYCqxEakATu5aD3VC7ktcAa1hs06jTup/oTcCPmKu7LwjuwAV8pdULBSwWSBJjTSZrUP0NcereQ+KMvzDGs5ZKZpHHsrMQcK/I+4/70raMp1DRx0Na5+iuIG7q28Hj/MBQ/HbOu2Y6xCsyAcykGN/qk1CzMl4qACo06a67uc1KcM/sH5ferFrCsGB7O8H1h9KJl66Uc7AqYK8TGXzIj60bv8AQ7FrZN8i1kVM5hpYLE+rG+KdaYzw+f3r0jaKE7NZRAmwQN3aJQTv1A4cvlXD1fUSwyil6umb4sSkm2eKkHupNZq5dwrAGQPMGmk93z/2rrbM0iqbncflS6zu+Yp9xII8JrjjSpTtWRJU6I1MGffU2GtF2lvE+H3qFlMbiKuYO4gzAySQI36RRlY9x5twyljmUcJUNlB3TwPfVbEMrOSoYKdwZszD31ctXbLt/akqsQCgXNI49rSqSqM2kxJid8cJ76iNo0nTbr2F1Q76XVCporkVoZEXVDvpVLlpUAcwyT/vUmItxXcGu6rGMTSvPcvMeoo+Usfh5jhYx6q2Yq/ZIQwxZzlUET2lzMD3RRfp50VuPjLj2+oRWRXyl8kiMrNqNDnVp14jvrNXsCLVq3iUur1iusIrdpc3qkMPVYQTrpw8dx+I1oYjA2cXaVtIDOZV2DdmCvEBwx7t40rrXKPPlxI8yYXl7ee4IgZwTIncM414HjwpmIl5Lav7Uxm72HE99TK7nDhi5INxlYHmiKUMjuuN5UxBUM0XK5Nb+HVoG2wY5Va/DGQIGVQTJ001o9ti+trFCwkuhUN1syASGJWVGU7gN/GgPRJYsN33GPnFR4/ap682HKLbgEsdGBjNvJjfHCufZbO1Z0RTSVOg1tLaKWEzuCRMaROs8z3VN0g2IOpV7wUhkLpDMCJUHUCOY51m8Rj0w65xkugnKVDLoIJzceUbuNH9o4hmsuGZyAjQCxYLK7hO7/aq+VJcc+5aV21fBgp+lQ3bwX1vkCf0qwyanQwNJjTdzodjsUVOUBdwJJVSd4IgkSN2o412RdujidF7D3Zgjd9q36bbtXcOuHXO1x0FsSIQNAUdrfE/vdXneHdmBLZQQYOVQqn+kAAUc6LW5xNkHXtzHPLLD5iuPrccZLZ+nKN8LadL1JrvRLEs4QhQGBJecyqARJkb9+g41O/4eXDuxFr3o4/U0WxfSC+Ljj+z0dhqpOgJA1BE1xOk172bXwt/5VxPqepaVNHUsONdwRf/AA4xDEFb1jQAahxuEcqgf8NcXwfDn+tx/orS2+lV3ilr/vH+qrdjpQ7MqlEEkCQW0njE1C6rqoquCssEG75PMdu7IuYN1S9lzMuYZGzCAY1kCDQ63bL+qQOc74PGtT+ILk3kO85CT72NZHD3Tm4xyXjXrYZOeNSl3Z5+WNSaR3FYXIAZGsyOIiu2tYNSvcIaZlmENmE5eW736ca4tsLoDIrVrkrF8Ux1cinUorQqMpU6lQB/AnXdV/G22OiqzGJgAkwN5gcBQ7Ct40WwXS0YS9raF0OmRoYqyqxE5WAOuk692orzJqV3FW/+HpbaxAGMRurYEgIY3kQSD2frWr2Zt+zc2Rew10lr6KVtW3/KCQttkaO0VJJ5ieVZXb+NF3EtedYRvVB1hZ9Ut7UaE8TrRfAPdY5LWHKEE5bjDLkt3AQV7UTOaZUmuuDqNyOOa2lSRHhuj6G61sdYUt5s7gQrPplA4AwdfCp8dslbQzAKR4QfKaO2bS2Ey5mdiczFjJLHexPLuqtiO2GB4iqx6h7VSopm6LaLls7rsnxZmbOKuICEdlEk5QFIn3iq2JU3GLuxLGJMAbhA3eFXRgmJOgGp3mp02cPzMT4afOumWDblI83H9R8PjI7X7AvoY51sNn4570hkQLpPrHN3QdKpW7CruUeJ1PzqLHY17YGUxO8wCdOU7qvHp4RpyVnPk+o5cjcMTqwxtG2GTJwPLQDvArz/AB9lluupGshR8MyO4iaP4LaLB+2xIOhkzHI91W9u7OzoLi+smp715+76TTO40n+C/wBMjlhN427VX+TP4BZUk8dfcRI+taLoqn/yrfDVtf6GoHgUhiv8Cn9JrS9F0/8AkpoJk6f0NFeV1cvK/g+mxRSSObQ/5tyNe22vPtHWq6oxnKJitHdt2xeu9YgaXfdrrnM8qCbOwtxGcuQVJ7EGYEtpu5EVljw+VNsSzc0kWGwiaxm7tarYYkXEkEdob/Gu4w3g6ZAMkjP6u7MJ367p3USxVi2biG2SYjid899XyYU42ikMz21ZlunLTeT+7/1tWRtGDWq6Zmb6/wB2P870O6M4G3cunr36u2ilmO4mCOyDwme88q6+nX8S+DDM6yMbgcG7hzkZkQF3I/KI3kndw030zAMmftrKmQoOu7cZ91ba10vw1sm0loJhgpA7JZnYxvU7gdZLEk8Y3UzbmxkdzftFSwLu8mQYXRFA0XUEe+tJK1RknRh3YZmA4E+U6VyruJsKUF0esx7Xs+4e6qlax7GbGUqfJrtSSFbJoddUm8zQYUgDxIq+t4CmO6GZ4nMeZO6a5OzO18odhsW6GUZ0J0JViDHLSrR2ne/61342+9UlROGbzpGlX6Eco1WGxGdFfiRr47j85qjtPaWSFQS538kHM9/IUMw20GRCoGsyDwE79OdVJkydT9apGHNss58Ug/YeUUnfAp81Wwzdhf5RUuavYj/VHxeVfyS+WSTUeLwvWIIIBGYiTAMAdmeZ4d9LNVba+KZLSssTnjUTplJ/QVTNej17m3RxXjRUu1gvLWk2FjMy9W29fVn8y8vd9KyyY3O2oAJ5bieJ7iat2bhRgy6EGRXmz2kqkfUYoQg7ig9f2ZZTNcZwmVYAKuSV4KI0mdKp4fAXDZGIiUZmkiZQqY15DTfUe08UcQyIgieftbzPcAK0mz8U9hAiEFAIyuoZTPrE8ddeNc+rjy3bf+FOrzXSXoNwplFJMkqCSTJJ7yd5qPFWXMZDG+dSJ3d1AdtXU60ZFyHUuoMqpPBZ1A7tYqlhsQwc9ogQeMDhWiRGPPdcGpsW3AOczy1n9KsYbR1J4GfKgKO5BYFyoElhmygc53VRfFPuDuREGWOs76rLg6Iu2aXE9GUxTdY151I7BVVU5cpJgnXU5p/qFZDpP0fbB3FKlntt6jkahgO0pjQHiO6ifRjaQtX8ju6WnMOV/KZhXg6QOPd4V6njuiNq8hR7t5gdQZTQ/lYdmohKeOk3aOeSlPI2ux4AV1014md/dWi6KY1g62s/YbPC6aMwBk+X1oVtPCNbvvb7LMjFAUOZWC6yCN9WcC4S7bYALDqDBnSYOvnXUnbDQ8rFt09h2HhlP3mh1F8fdRL15SdGM6doSR2tR3mhBraJmxad9Kll767VgW1sHjp8/wDapRaA4a9+tHR0WxPsJ8YpN0WxIElUAG8m4IHvms/DZp4sQGa4RUmNtm2xQxPMGV15HjUNs6VWUXEvGakxNTGYDU027djdqarlSdTVS4Yw+MUKoht3d96l9OXk3y+9V7dsBQIG4UzELC6ATIA869yOFKCb9jzJ9Fibba/ZetYkMYE1X25dHVKCPzz/ANp+9VMj+y3kakx6s1sZhHEDuEa1jkx3F17GcOjUcqlHsCVyncCIqfDYh3YCQBvJA1iqt9cuXzNaToTsxcTdY5ewgBfTfPqp7417pry5NJWekk7pGq6MbATqs95ZZ9VEkFE4ERxbf4RVfpVbTB2s6XDmY5UtsA0niZ4ADXUchxrV4nErbVnchUUFmPAAfvdXjHSDbjYq81wkhfVRfZQbh4neT9q54R3lb7FssYpU1yXNh2+tcZyTmzMSDqTqfrWpXZ1kDVF01liTu7zWX6KMes19hmHyB/ffRLau0c3YQ9kesfaPLw+tTNNypHDK9qRFtPaD3Oz1jlBuXcDG4xyqmDXAaivXQo176ao2U5VqLDa5j3xWz6PdJMWq9WjG5lXsoy5xlAiBHagabjXn+EvZTruO/wC9HcFintOlxGyuhzKe8foRI8DVpRtHRFUDNl7Le7e9HVZcBiqhgDKqWYAkieyCRzqQ4FP4vP617ku1VOVzZXPA17MqSNQGyzGprzHpndt+lvkUIWCs4ns52kkg8CRBI5mrYpbSporOLirM6uGhcsiP5dfOdarvhmHeO77USiuV1UjGwRkPI+VKi+Yc/nSpRB6Lf2ii6L228ez58fdQvE4lnPbaeQGij3VExk6eVRB+6eNbVRQBdIbfaRuBBHkdPr8qCO53DdWm2yuZJ4ggjlG79flQJLIaTBrnyo2xPkpqKegkgczU9zDEblPvqbC2II58fdWeODlNKvU3ckl3JyQOIqvj/Ujmf0q6+HB1Iqrj09UeP6R+te/ltQZgBDcYfmYeBIqxh77N2SzEb9STw3a12/hCTOoptnDlTNeV4yrv6F9XfAr9oPvJHhTLNkocyO6nmrZT5irRSuFK4rNaXsWcdtfEXrfVXLrOkg6hcxI3SwGoHfQlsN/E3yq4UpFKJ12DjZBZDAQpExEnTsneNKd2+NxR4AVKiaGDqBIHMTr+lVIndHfUWZeFbseVU73dvCiOE2bbyl3DACIDSJ7zyFUkSBx5g/70f2lrYc/wz5xUOXKRosEXFu+xTxGEtBGIQSFJGp0MeNLo4vW3UtnWWHvUGT8gaGWMbCMjciFPLuPdUCXCplSwI3FSVInkRqK3cbVGTnzZ7mQa8d27izcv3XGoLtl7wpyr8hVE3nO93PizH6muBqpjxau7E57cFmziGXQajkf0O8VcsXEfSACeDcfAnfQhIOuuuoHLSKlHfWxkFfQx3fCKVDeub2m8zSqQbtrnBRH1NRvc3gbvnSd5k8eAqNuzrImtiozEKrKw3TIA92+gllzlI7+Z+kxRd/MncBSbYNwAsMmpnLOonhJET76pIlMFRU2FQltAdBTXQqcrAgjeDoavbKxqWsxdwpMATPCeQpGeklKuxZDSh5HyNUMWpLqI4fWa0g21Y/6yfEap4hGvuzWirwoIMzmAEQI3mSa6J9Y5x1olgXEoBAG6P2ahy1M7E/8Aqm5Tz+VedKDbtG0MkUqZDkrht1NkPP5VwoefyqvhyL+LEhKU3LVo2++mtbp4ciPFiVMM6re7cZSpGuo5/UVHi1RG7JlTu0PlTsTbh0LbswnwnX5E0Zu4a0RlbJ5gHzqdPcb2qRnnxRZQgJkGV8DvHhuNOOKvMuRnbLEQQIjlumipwNlQYcTw1H6Cqpt1aMEZynJA3qTzFNKEURNuo2t1pRiUgadNOu2Y1HvqB3gSKFhIO0GXd6sdw4irQaqqqI7J361YVqIDppU2a7QG0uEaRv4/ao30MGfAb54CuM51PPd58KL7M2fl7b+twB/L3/zfStrMx2zdnZO247Z3D2R96Ij976dH7/YrsfuagFfE4VLgh1BHDmPA7xQi/wBGFaQHOXgCske8EVoB7/OuxUUDLL0QUES8idRlYSOUhqN7O2TbsT1asJ3y7MPdJ0ogFpwtnkfn9qhJE2wDtrY2c57cB/zLuDd+u4/Wgj7Hvj/82PhDfQ1ush5H5/auhDyb51NA88fCuvrI48UYfpUNel5G5NTHsBvWRT/MoP1FKJs89y1wrW0xmxLTjRQjcGQAeYiCKy20NnXLJ7YleDjVT8tD3GooWBdr2+xI4EfPSiWG2dbZFbtHMqtv9oA1VxwlHHdPlrQ2ztG6qqquQAIEBd3jFZSTs0i0aRdnJ7PzP3qhfsZWI4Dd4cKFPtC8d9x/ij6UYwGzMRctq4W6waTmjNInmQaRTsSaorFPd46VGIPPyIHnFXcXse4gzPYbIurEpMd88PKqzYePUOT+UD9RWhmQuncT4a1TxOF/MAe8cfGrPVZTORmbfOW2DP8AMDUwZ+KR/Up891QAGgiB+9KlFW8bhCJZd3Ecu8d1Ug9QWH0q51lKgPStlbOiHcdr8q6dkcz3/SiwH7/YpwX9xXQD+xWpmNmux4fP7V2DypwXw+tAc/f70roXuNdg/sVWx9zKhA3tp7uJ/T30BlukF3NdnhlAHgC0UPDDv8zV3bB7azxX9TQ5iOFCR7NyJ8zXVbmT5mog1OLzvoB7HlPmah66LiKCfXSdf4hpXMTeVRpvO771Twh/tE/vE/zCobJPXP3wpMoIIMEHQgiQRyIiugfuK7+9wqSpm9qdGVYE2YEgzbJ7Jn2W4eB0rH2eimMMDqCNN7PbH+uvVIroqrimWUmjzVOhWLPC0PG4D/lBr0HZWENqzbtneiKpjdIGsac5q3HhSAoo0Q5NidAwIIkEEEGNQd4rJYvotcBPVsjrOgJKsBwGogn31rwKd+9wqxB5xidm3U9e2698SPNZFVcoPH9+Veogmq+I2faf17aMeZEHzGtRRNnmpt0I2hgCsug0/MOXeO6vTsR0XtN6jMh8Qw+evzoViOi11fUdHHjlPkdPnUOJNnms12tmeiDf9E+Y/wDKlVaZNlOF/f8A6rjAcKYaQatCo5QONOIWms/dXQvfQCy6TRXZDQrfzD6ULy99E9j+q/iP1ogyvtv10J5H5R96Gh43UQ2+2qeDfUULDijCJM/Gk+JyiTUZcVQv3cx7uH3qrdEnbt4sZNcUajdvqKRSQ6jxH1qoDgA406FrhQc6jJrQgcwHCkoHGmq0V1nB7qAcwXhTSvcK7kHOkV76EjKeAtNUTxrjCOM0A5gtNMU2aeLg5UB2FppUE6CuKJ4xTgvfQDIHIUqdk76VAJXG4inW0LMAomajxKFHI1ImJrjOywRII3H3GufxW4OUfwZbeVtFm9bCGD8pqW+i5EIXeCSR7t9DvSi+rRpp499ELl3+zVYMwfdXPKeRKHq75M5SklG+9lWaK7EMh/Ff1oUHjhRXYjzn93616C7nQyHpCdUn+If5aDlhyrT4vBrcIzKxjdEjU793uqhj9nWkRmyOGA0ljvJgVDCM5ib35R7/ALVXmrfo68j5muejLyPnVCSqa6hEjxFWfRl5HzNd9HUcD5mgCEca7mWoZpQeVWBIpHGnZl/c1CZps0BMzDhTc1Mg8jXetigHDWuqRxqJnmlB5UBIzDhXQwqKDyps0BOWWmFqYJpBiOFAOzUq51tKpsBDaYgz3/pVFzu8aVKvO6f7D+Dkw/bZWf12/mNFMXpH74CuUqP7sPgmX94/BWotsDe/9P61ylXoo6WFF+/1q3aw6shzKD412lRgxm0bQW6QBA5VDFKlVSRjVw0qVAPWlnPOlSqQdJqTII3cK7SoCDOedKlSoDldznnXKVALOedOXWlSoBNpTJpUqAVKlSoD/9k="
-              alt="Minecraft Wikipedia"
-              style="width: 150px; height: 175px"
-          /></a>
+          <a href="https://en.wikipedia.org/wiki/Minecraft" target="_blank">
+            <img
+              src="https://www.minecraft.net/content/dam/games/minecraft/key-art/redeem-art-minecraft-285x380.jpg"
+              alt="Minecraft game sleeve that has steve and alex on it with mobs chasing them exiting a cave."
+              style="width: 150px; height: 175px" />
+          </a>
         </center>
-        <a href="https://www.minecraft.net/">Purchase Here</a>
+        <a href="https://www.minecraft.net/" target="_blank"> Purchase Here </a>
         <br />
         <br />
         <br />
@@ -38,69 +44,90 @@
         <br />
 
         <p>Top 3</p>
-
-        <center><h1>Lego Star Wars</h1></center>
+        <!-- Everything that is typed here is for all of the images and the purchase here's,
+        the "a href" is for the link to wikipedia and to get there is by the user pressing the link.
+        The img is the image itself, the purchase here takes the user to where the game is purchased. \
+        (EXAMPLE "it would take you to the amazon page.")-->
+        <center><h1>Sea of Thieves</h1></center>
         <center>
           <a
-            href="https://en.wikipedia.org/wiki/Lego_Star_Wars:_The_Skywalker_Saga"
-            ><img
-              src="https://m.media-amazon.com/images/I/81-QbSEKMcL._AC_SX569_.jpg"
-              alt="Super Mario 64 on Amazon"
-              style="width: 150px; height: 175px"
-          /></a>
+            href="https://en.wikipedia.org/wiki/Sea_of_Thieves"
+            target="_blank">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/7/77/Sea_of_thieves_cover_art.jpg"
+              alt="Sea of Thieves Sleeve with a outline of a skull and pirate ships with lighting in the skull."
+              style="width: 150px; height: 175px" />
+          </a>
         </center>
         <a
-          href="https://www.amazon.ca/Lego-Star-Wars-Skywalker-PlayStation/dp/B07SY49JZX/ref=sr_1_1?ascsubtag=%5Bartid%7C10060.g.38323127%5Bsrc%7C%5Bch%7C%5Blt%7Csale&imprToken=98c1c4ce-f0d5-0d80-6c3&keywords=LEGO%2BStar%2BWars%3A%2BThe%2BSkywalker%2BSaga%2B-%2BStandard%2BEdition%2B-%2BPlayStation%2B4&linkCode=gg3&qid=1664461606&qu=eyJxc2MiOiIwLjAwIiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sr=8-1&th=1"
-          >Purchase Here</a
-        >
+          href="https://store.steampowered.com/app/1172620/Sea_of_Thieves/"
+          target="_blank">
+          Purchase Here
+        </a>
       </section>
+      <!--column 2 is the center of the webpage-->
       <section class="column2">
-        <center><h1>Computer Top 5 Games</h1></center>
         <center>
-          <a href="https://www.windows.com/"
-            ><img
+          <h1>
+            <u>Computer Top 5 Games </u>
+          </h1>
+        </center>
+        <center>
+          <a href="https://www.windows.com/" target="_blank">
+            <img
               src="https://i.pinimg.com/originals/ff/96/34/ff963458f04737eec6cc2e764a5e7dd2.png"
-              alt="Windows Website"
-              style="width: 300px; height: 200px"
-          /></a>
+              alt="Windows logo with black hills at the bottom"
+              style="width: 300px; height: 200px" />
+          </a>
         </center>
         <br />
         <br />
 
         <center><p>Top 1</p></center>
+        <!-- Everything that is typed here is for all of the images and the purchase here's,
+        the "a href" is for the link to wikipedia and to get there is by the user pressing the link.
+        The img is the image itself, the purchase here takes the user to where the game is purchased. \
+        (EXAMPLE "it would take you to the amazon page.")-->
         <center><h1>GTA 5</h1></center>
         <center>
-          <a href="https://en.wikipedia.org/wiki/Grand_Theft_Auto_V"
-            ><img
+          <a
+            href="https://en.wikipedia.org/wiki/Grand_Theft_Auto_V"
+            target="_blank">
+            <img
               src="https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png"
-              alt="GTA on Steam"
-              style="width: 150px; height: 175px"
-          /></a>
+              alt="GTA sleeve with the words grand theft auto v with 9 pictures in a collage of the diffrent characters in the game"
+              style="width: 150px; height: 175px" />
+          </a>
         </center>
         <center>
           <a
             href="https://store.steampowered.com/agecheck/app/271590/?gclid=CjwKCAjwwL6aBhBlEiwADycBICEECCXJj0VgRop6MAlB9DUrQkxjh8oQ7qANkfmTxj8jxNNwcsPVPBoCyDcQAvD_BwE"
-            >Purchase Here</a
-          >
+            target="_blank">
+            Purchase Here
+          </a>
         </center>
       </section>
+      <!--column 3 is the right side of the webpage-->
       <section class="column column3">
         <p>Top 4</p>
-
-        <center><h1>Our House</h1></center>
+        <!-- Everything that is typed here is for all of the images and the purchase here's,
+        the "a href" is for the link to wikipedia and to get there is by the user pressing the link.
+        The img is the image itself, the purchase here takes the user to where the game is purchased. \
+        (EXAMPLE "it would take you to the amazon page.")-->
+        <center><h1>Gang Beasts</h1></center>
         <center>
-          <a
-            href="https://www.amazon.com/Our-House-Party-Nintendo-Wii/dp/B001FEO71I"
-            ><img
-              src="https://m.media-amazon.com/images/I/81z+dnie+pL._AC_SY741_.jpg"
-              alt="Our House on Amazon"
-              style="width: 150px; height: 175px"
-          /></a>
+          <a href="https://en.wikipedia.org/wiki/Gang_Beasts" target="_blank">
+            <img
+              src="https://static-cdn.jtvnw.net/ttv-boxart/459527_IGDB-272x380.jpg"
+              alt="Gang Beasts sleeve with red, blue, yellow and green blobby people fighting on a truck"
+              style="width: 150px; height: 175px" />
+          </a>
         </center>
         <a
-          href="https://www.amazon.com/Our-House-Party-Nintendo-Wii/dp/B001FEO71I"
-          >Purchase Here</a
-        >
+          href="https://store.steampowered.com/app/285900/Gang_Beasts/"
+          target="_blank">
+          Purchase Here
+        </a>
         <br />
         <br />
         <br />
@@ -109,22 +136,31 @@
         <br />
 
         <p>Top 5</p>
-
-        <center><h1>Mario Odyssey</h1></center>
+        <!-- Everything that is typed here is for all of the images and the purchase here's,
+        the "a href" is for the link to wikipedia and to get there is by the user pressing the link.
+        The img is the image itself, the purchase here takes the user to where the game is purchased. \
+        (EXAMPLE "it would take you to the amazon page.")-->
+        <center><h1>Portal 2</h1></center>
         <center>
-          <a href="https://en.wikipedia.org/wiki/Super_Mario_Odyssey"
-            ><img
-              src="https://m.media-amazon.com/images/I/91EzThTHhaL._AC_SY500_.jpg"
-              alt="Our House on Amazon"
-              style="width: 150px; height: 175px"
-          /></a>
+          <a href="https://en.wikipedia.org/wiki/Portal_2" target="_blank">
+            <img
+              src="https://assets-prd.ignimgs.com/2021/12/08/portal2-1638924084230.jpg"
+              alt="Portal 2 sleeve with a robot jumping through a orange portal."
+              style="width: 150px; height: 175px" />
+          </a>
         </center>
         <a
-          href="https://www.amazon.ca/Nintendo-HACPAAACA-Super-Mario-Odyssey/dp/B072V8MMX7/ref=asc_df_B072V8MMX7/?tag=googleshopc0c-20&linkCode=df0&hvadid=292957361268&hvpos=&hvnetw=g&hvrand=3173237734792444822&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9001212&hvtargid=pla-464698415404&th=1"
-          >Purchase Here</a
-        >
+          href="https://store.steampowered.com/app/620/Portal_2/"
+          target="_blank">
+          Purchase Here
+        </a>
       </section>
     </main>
-    <footer class="footer">Footer</footer>
+    <footer class="footer">
+      <a href="sign-in.html"> Sign In </a>
+      <br />
+      <br />
+      <small>&#169; <i>2022 Dylan</i></small>
+    </footer>
   </body>
 </html>

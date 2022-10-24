@@ -8,18 +8,38 @@
     <title>Sign In</title>
   </head>
   <body>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="nintendo.html">Nintendo</a></li>
-      <li><a href="playstation.html">PlayStation</a></li>
-      <li><a href="xbox.html">Xbox</a></li>
-      <li><a href="computer.html">PC</a></li>
-    </ul>
+    <!-- Top Navigation bar that takes you to diffrent parts of the web page-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="nintendo.html">Nintendo</a></li>
+        <li><a href="playstation.html">PlayStation</a></li>
+        <li><a href="xbox.html">Xbox</a></li>
+        <li><a href="computer.html">PC</a></li>
+      </ul>
+    </nav>
 
-    <div class="flex-container">
-      <aside class="aside aside1"></aside>
-      <section class="main">
-        <form>
+    <main class="flex-container">
+      <!--column 1 is the left side of the webpage-->
+      <section class="column column1">
+        <center>
+          <h1>
+            <u>Sign In</u>
+          </h1>
+        </center>
+        <br />
+        <br />
+        <form name="sign-in" id="in" method="get">
+          <!--This is a text input. type="text" name, and id are all required attributes.
+        The required attribute is only necessary when you want to make sure the user
+        has to fill in the input before submitting the form.
+
+        The type attribute defines the type of input.
+        The name attribute defines the variable name that would be used for the 
+        input when the data gets passed to the server (requires back-end scripting,
+        which is beyond the scope of this course).
+        The id attribute allows us to reference the input from the label and from
+          other parts of our code.-->
           <label for="email">Email Address</label>
           <input
             type="email"
@@ -41,10 +61,12 @@
           <input type="submit" value="Submit" />
         </form>
       </section>
-      <aside class="aside aside2"></aside>
-      <footer class="footer">
-        <a href="sign-up.html">Sign Up</a>
-      </footer>
-    </div>
+    </main>
+    <footer class="footer">
+      <<a href="sign-up.html">Sign Up </a>
+      <br />
+      <br />
+      <small>&#169; <i>2022 Dylan</i></small>
+    </footer>
   </body>
 </html>
