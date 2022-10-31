@@ -1,0 +1,17 @@
+/* This styles the bady of the webpage to have a background color if #f5f5ff
+which is a white with a hint of blue using the backgound-color proporty and font
+color of midnightblue using the color css proporty */
+
+body {
+  background-color: #f5f5ff;
+  color: midnightblue;
+}
+/* This styles all fo teh h1 tages to be center alighed and have a font of 40 px */
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+/* this style all p tages to have a font size of 24 px*/
+p {
+  font-size: 24px;
+}

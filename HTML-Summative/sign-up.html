@@ -39,13 +39,14 @@
         which is beyond the scope of this course).
         The id attribute allows us to reference the input from the label and from
           other parts of our code.-->
-          <label for="email">Email Address</label>
+          <label for="email">Email Address (Required)</label>
           <input
             type="email"
             name="email"
             id="email-address"
             minlength="6"
-            maxlength="40" />
+            maxlength="40"
+            required />
           <br />
           <br />
           <!--This is a password input. type-"password", name, and id are all required attributes.
@@ -54,7 +55,7 @@
 
           <label for="password">Password</label>
           <!- This input is for paswwords or confidential information for the user to type.-->
-          <label for="password">Password</label>
+          <label for="password">Password (Required)</label>
           <input
             type="password"
             name="userpassword"
